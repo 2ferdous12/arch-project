@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "img" : "https://i.imgur.com/PajUMWN.png",
+      "img_name": "https://i.imgur.com/DZ6hQly.jpeg",
+      "name" : "Seraph Station",
+      "details" : "September 2019"
+    }, 
+
+    {
+        "id": 1,
+        "img": "https://i.imgur.com/uFgWsRH.png",
+        "img_name": "https://i.imgur.com/BbfZ0zh.jpeg",
+        "name" : "Eebox Building",
+        "details" : "August 2017"
+      },     {
+        "id": 1,
+        "img": "https://i.imgur.com/f23EDlw.png",
+        "img_name": "https://i.imgur.com/oigaJlE.jpeg",
+        "name" : "Federal II Tower",
+        "details" : "March 2017"
+      }, 
+
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/y1VKjuT.jpeg",
+        "name" : "Project Del Sol",
+        "details" : "January 2016"
+      }, 
+
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/nucpPQI.jpeg",
+        "name" : "Le Prototype",
+        "details" : "October 2015"
+      }, 
+
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/B57tmr7.jpeg",
+        "name" : "228B Tower",
+        "details" : "April 2015"
+      }, 
+
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/F3yiojk.jpeg",
+        "name" : "Grand Edelweiss Hotel",
+        "details" : "December 2013"
+      }, 
+
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/Ikph9tR.jpeg",
+        "name" : "Netcry Tower",
+        "details" : "August 2012"
+      }, 
+
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/wvyGDt0.jpeg",
+        "name" : "Hypers",
+        "details" : "January 2012"
+      }
+  ]
+  
