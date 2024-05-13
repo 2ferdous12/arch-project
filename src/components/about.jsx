@@ -21,7 +21,7 @@ const about = () => {
                     </div>
                 </div>
                 <div className="w-[645px] hidden md:block lg:block md:w-[392px] lg:w-[645px] h-[200px] absolute top-32 left-[45%] md:left-[45%] lg:left-[45%]">
-                    <img className="w-[645px] h-[200px]" src="/public/imges/about/desktop/About.png" alt="" />
+                    <img className="w-[645px] h-[200px]" src="/imges/about/desktop/About.png" alt="" />
                 </div>
    
             </div>

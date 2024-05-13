@@ -85,7 +85,7 @@ const home = () => {
       {/* ?wellcome section*/}
 
       <div className="mt-10 mb-10 md:mb-0 lg:mb-10 md:w-[581px] hidden md:block lg:block lg:w-[941px] mx-auto h-[200px]">
-        <img src="/public/imges/home/desktop/Welcome (1).png" alt="" />
+        <img src="/imges/home/desktop/Welcome (1).png" alt="" />
       </div>
 
       <div className="flex ite items-center mt-5 md:mt-0 lg:mt-5 mb-10 flex-col md:flex-col gap-10 justify-between lg:flex-row" >

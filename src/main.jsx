@@ -5,6 +5,7 @@ import Route from './components/route';
 import Home from './components/home';
 import Protfulio from './components/protfulio';
 import About from './components/about';
+import Contact from './components/contact';
 
 import {
   createBrowserRouter,
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
       }
     ]
   },
