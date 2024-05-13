@@ -14,13 +14,18 @@ const home = () => {
   const handleClick = () => {
     setShowAll(true);
   };
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleClick22 = (index) => {
+      setActiveSlide(index);
+  };
 
   return (
     <div>
 
       {/* /home sileder */}
 
-      <div className="w-full md:w-[573px]   lg:w-[1110px] h-[720px] ">
+      <div className="w-full md:w-[573px]   lg:w-full h-[720px] ">
         <div>
           <img src="" alt="" />
         </div>
@@ -75,13 +80,21 @@ const home = () => {
         </div>
       </div>
 
-      <div className=" -translate-y-14 hidden md:hidden lg:block">
+      <div className=" -translate-y-14 -translate-x-20 hidden md:hidden lg:block">
+            <a href="#slide1" className={`p-8 text-[#7D828F]  font-semibold text-xl ${activeSlide === 0 ? 'bg-black' 
+            : ' bg-white hover:bg-gray-200 hover:text-black'}`} onClick={() => handleClick22(0)}>01</a>
+            <a href="#slide2" className={`p-8 text-[#7D828F] font-semibold text-xl ${activeSlide === 1 ? 'bg-black' :  ' bg-white hover:bg-gray-200 hover:text-black'}`} onClick={() => handleClick22(1)}>02</a>
+            <a href="#slide3" className={`p-8 text-[#7D828F]  font-semibold text-xl ${activeSlide === 2 ? 'bg-black' : ' bg-white hover:bg-gray-200 hover:text-black'}`} onClick={() => handleClick22(2)}>03</a>
+            <a href="#slide4" className={`p-8 text-[#7D828F]  font-semibold text-xl ${activeSlide === 3 ? 'bg-black' : ' bg-white hover:bg-gray-200 hover:text-black'}`} onClick={() => handleClick22(3)}>04</a>
+        </div>
+
+      {/* <div className=" -translate-y-14 hidden md:hidden lg:block">
         <a href="#slide1" className="p-8 text-white font-semibold text-xl hover:bg-gray-200 hover:text-black bg-black">01</a>
         <a href="#slide2" className="p-8 text-white font-semibold text-xl hover:bg-gray-200 hover:text-black bg-black">02</a>
         <a href="#slide3" className="p-8 text-white font-semibold text-xl hover:bg-gray-200 hover:text-black bg-black">03</a>
         <a href="#slide4" className="p-8 text-white font-semibold text-xl hover:bg-gray-200 hover:text-black bg-black">04</a>
 
-      </div>
+      </div> */}
       {/* ?wellcome section*/}
 
       <div className="mt-10 mb-10 md:mb-0 lg:mb-10 md:w-[581px] hidden md:block lg:block lg:w-[941px] mx-auto h-[200px]">
@@ -119,10 +132,10 @@ const home = () => {
               <h1 className="text-5xl font-bold">Small team, <br /> big ideas</h1>
               <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
                 excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button className="w-[187px] hover:bg-[#60636D] h-[52px] mx-auto items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
-                <p className="text-[#FFFFFF] font-semibold">About Us</p>
+              <Link to="/about" className="w-[187px] hover:bg-[#60636D] h-[52px] mx-auto items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
+                <Link   className="text-[#FFFFFF] font-semibold">About Us</Link>
                 <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

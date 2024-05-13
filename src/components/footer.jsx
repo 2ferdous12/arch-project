@@ -6,7 +6,7 @@ const footer = () => {
             <div className="mt-20  w-[371px] mx-auto md:w-[612px] lg:w-[980px] bg-[#EEEFF4]
                h-[400px] md:h-[120px]  lg:h-[150px]  flex flex-col md:flex-row lg:flex-row justify-between items-center">
                 <Link to="/" className="bg-black h-[120px] flex justify-center items-center  w-[120px] ">
-                    <img className="w-[60px]" src="/public/imges/icons/Arch 3.svg" alt="" />
+                    <img className="w-[60px]" src="/imges/icons/Arch 3.svg" alt="" />
                 </Link>
 
                 <div className="

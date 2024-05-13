@@ -5,7 +5,7 @@ const feature = ({data}) => {
 
     return (
         <div className='mt-5'>
-        <div className="hero w-[331px] md:w-[573px] lg:w-[350px] h-[240px] mx-auto md:h-[240px] lg:h-[560px]" >
+        <div className="hero w-[331px] md:w-[573px] lg:w-[350px] h-[240px] mx-auto md:h-[240px] lg:h-[560px] " >
          <div className="relative">
          <img className='h-[240px] md:h-[240px]
           lg:h-[560px]  w-[331px] md:w-[573px] lg:w-[350px]' src={img_name} alt="" />

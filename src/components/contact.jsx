@@ -1,6 +1,54 @@
+import { useState } from "react";
 
 
 const contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (e) => {
+        // Clear error message for the field being edited
+        setErrors({
+            ...errors,
+            [e.target.name]: ''
+        });
+
+        // Update form data
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form= e.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const message = form.message.value;
+        console.log(name, email, message)
+
+        const newErrors = {};
+        if (!formData.name.trim()) {
+            newErrors.name = 'Name field cannot be empty';
+        }
+        if (!formData.email.trim()) {
+            newErrors.email = 'Email field cannot be empty';
+        }
+        if (!formData.message.trim()) {
+            newErrors.message = 'Message field cannot be empty';
+        }
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            return;
+        }
+        console.log(' successfully');
+    };
+
+
     return (
         <div>
             <div className="flex items-center relative mb-10">
@@ -54,7 +102,7 @@ const contact = () => {
             </div>
 
             <div className=" w-[371px] md:w-[572px] lg:w-[1110px]  h-[567px] md:h-[560px]  lg:h-[560px] mt-20 mx-auto">
-                <img className="w-[371px] md:w-[572px] lg:w-[1110px]  h-[567px] md:h-[560px]  lg:h-[560px]" src="/public/imges/contact/desktop/image-map.png" alt="" />
+                <img className="w-[371px] md:w-[572px] lg:w-[1110px]  h-[567px] md:h-[560px]  lg:h-[560px]" src="/imges/contact/desktop/image-map.png" alt="" />
             </div>
 
             <div className="flex flex-col md:flex-col lg:flex-row
@@ -64,33 +112,49 @@ const contact = () => {
                 </div>
 
                 <div className="mx-auto w-[311px] md:w-[572px] lg:w-[730px]">
-                    <form className="space-y-10 relative">
 
-                        <input className="w-[311px] md:w-[572px] lg:w-[730px] font-semibold h-[40px] border-b-2 border-[#C8CCD8]"
-                            type="text"
-                            name="name"
-                            placeholder="Name"
-                            id="" />
+                <form onSubmit={handleSubmit} className="space-y-10 relative">
+            <input
+                className={`w-[311px] md:w-[572px] lg:w-[730px] font-semibold h-[40px] border-b-2 ${errors.name ? 'border-red-500' : 'border-[#C8CCD8]'}`}
+                type="text"
+                name="name"
+                placeholder={errors.name ? 'Name (Required)' : 'Name'}
+                value={formData.name}
+                onChange={handleChange}
+            />
+           <div className="absolute top-[-15%] right-0">
+           {errors.name && <p className="text-red-500 font-bold text-xl">Cant be empty</p>}
+           </div>
+            <input
+                className={`w-[311px] md:w-[572px] lg:w-[730px] h-[40px] border-b-2 ${errors.email ? 'border-red-500' : 'border-[#C8CCD8]'}`}
+                type="email"
+                name="email"
+                placeholder={errors.email ? 'Email (Required)' : 'Email'}
+                value={formData.email}
+                onChange={handleChange}
+            />
+            <div className="absolute top-[20%] right-0">
+            {errors.email && <p className="text-red-500 font-bold text-xl">Cant be empty</p>}
+            </div>
+            
+            <input
+                className={`w-[311px] md:w-[572px] lg:w-[730px] h-[40px] border-b-2 ${errors.message ? 'border-red-500' : 'border-[#C8CCD8]'}`}
+                type="text"
+                name="message"
+                placeholder={errors.message ? 'Message (Required)' : 'Message'}
+                value={formData.message}
+                onChange={handleChange}
+            />
+            <div className="absolute top-[60%] right-0">
+            {errors.message && <p className="text-red-500 font-bold text-xl">Cant be empty</p>}
+            </div>
+            <div className="absolute right-0 md:right-[0%] lg:right-[0%] top-[80%]">
+                <button type="submit" className="bg-black cursor-pointer w-[80px] h-[80px] flex justify-center items-center">
+                    <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
+                </button>
+            </div>
+        </form>
 
-
-                        <input className="w-[311px] md:w-[572px] lg:w-[730px] h-[40px] border-b-2 border-[#C8CCD8]"
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            id="" />
-
-                        <input className="w-[311px] md:w-[572px] lg:w-[730px] h-[40px] border-b-2 border-[#C8CCD8]"
-                            type="text"
-                            name="messege"
-                            placeholder="Messege"
-                            id="" />
-                        <div className="absolute right-0 md:right-[0%] lg:right-[0%] top-[80%]">
-                            <div className="bg-black w-[80px] h-[80px] flex justify-center items-center">
-                                <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-                            </div>
-                        </div>
-
-                    </form>
                 </div>
             </div>
         </div>
