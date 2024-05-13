@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import Feature from "./feature";
+import { Link } from "react-router-dom";
 const home = () => {
   const [loaddata, setLoaddata] = useState([]);
   useEffect(() => {
@@ -30,10 +31,10 @@ const home = () => {
             <div className="absolute space-y-5 top-24 md:top-[18%] lg:top-[18%] left-3  md:left-12 lg:left-32 ">
               <h1 className="text-[#FFFFFF]  w-[544px] text-6xl md:text-8xl lg:text-8xl font-bold">Project <br />Paramour</h1>
               <p className="text-[#FFFFFF] text-balance font-semibold h-[72px]">Project made for an art museum near Southwest  <br /> London. Project Paramour is a statement of bold, modern <br /> architecture.</p>
-              <button className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
+              <Link to="/protfulio" className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
                 <p className="text-[#FFFFFF] font-semibold">See Our Portfolio</p>
                 <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-              </button>
+              </Link>
             </div>
           </div>
           <div id="slide2" className="carousel-item relative w-full">
@@ -41,10 +42,10 @@ const home = () => {
             <div className="absolute space-y-5 top-24 md:top-[18%] lg:top-[18%] left-3  md:left-12 lg:left-32 ">
               <h1 className="text-[#FFFFFF]  w-[544px] text-6xl md:text-8xl lg:text-8xl font-bold">Project <br />Paramour</h1>
               <p className="text-[#FFFFFF] text-balance font-semibold h-[72px]">Project made for an art museum near Southwest  <br /> London. Project Paramour is a statement of bold, modern <br /> architecture.</p>
-              <button className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
+              <Link to="/protfulio" className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
                 <p className="text-[#FFFFFF] font-semibold">See Our Portfolio</p>
                 <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -53,10 +54,10 @@ const home = () => {
             <div className="absolute space-y-5 top-24 md:top-[18%] lg:top-[18%] left-3  md:left-12 lg:left-32 ">
               <h1 className="text-[#FFFFFF]  w-[544px] text-6xl md:text-8xl lg:text-8xl font-bold">Project <br />Paramour</h1>
               <p className="text-[#FFFFFF] text-balance font-semibold h-[72px]">Project made for an art museum near Southwest  <br /> London. Project Paramour is a statement of bold, modern <br /> architecture.</p>
-              <button className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
+              <Link to="/protfulio" className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
                 <p className="text-[#FFFFFF] font-semibold">See Our Portfolio</p>
                 <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -65,10 +66,10 @@ const home = () => {
             <div className="absolute space-y-5 top-24 md:top-[18%] lg:top-[18%] left-3  md:left-12 lg:left-32 ">
               <h1 className="text-[#FFFFFF]  w-[544px] text-6xl md:text-8xl lg:text-8xl font-bold">Project <br />Paramour</h1>
               <p className="text-[#FFFFFF] text-balance font-semibold h-[72px]">Project made for an art museum near Southwest  <br /> London. Project Paramour is a statement of bold, modern <br /> architecture.</p>
-              <button className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
+              <Link to="/protfulio" className="w-[232px] hover:bg-[#60636D] h-[52px] items-center p-5 rounded-md gap-4 bg-[#1B1D23] flex">
                 <p className="text-[#FFFFFF] font-semibold">See Our Portfolio</p>
                 <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -87,24 +88,24 @@ const home = () => {
         <img src="/public/imges/home/desktop/Welcome (1).png" alt="" />
       </div>
 
-      <div className="flex ite items-center mt-5 md:mt-0 lg:mt-5 mb-10 flex-col md:flex-col gap-10 lg:flex-row" >
+      <div className="flex ite items-center mt-5 md:mt-0 lg:mt-5 mb-10 flex-col md:flex-col gap-10 justify-between lg:flex-row" >
         <div className="space-y-5">
           <p className="text-black text-6xl font-bold">Welcome to <br /> Arch Studio</p>
-          <p className="text-[#60636D] text-xl w-[310px] md:w-[572px]  lg:w-[700px]">We have a unique network and
+          <p className="text-[#60636D] text-xl w-[310px] md:w-[572px]  lg:w-[572px] ">We have a unique network and
             skillset to help bring your projects to life. Our small team of highly skilled individuals
             combined with our large network put us in a strong position to deliver exceptional results.</p>
-          <p className="text-[#60636D] text-xl text-balance w-[310px] md:w-[572px] lg:w-[700px]">
+          <p className="text-[#60636D] text-xl text-balance w-[310px] md:w-[572px] lg:w-[572px]">
             Over the past 10 years, we have worked on all kinds of projects. From stations
             to high-rise buildings, we create spaces that inspire and delight.
           </p>
-          <p className="text-[#60636D] text-xl w-[310px] md:w-[572px]   lg:w-[700px]">
+          <p className="text-[#60636D] text-xl w-[310px] md:w-[572px]   lg:w-[572px]">
             We work closely with our clients so that we understand the intricacies of
             each project. This allows us to work in harmony the surrounding area to create truly
             stunning projects that will stand the test of time.</p>
         </div>
 
         <div className=" hidden md:hidden lg:block w-[450px] h-[568px]">
-          <img className="w-full  h-[568px]" src="/imges/home/desktop/image-welcome.jpg" alt="" />
+          <img className="w-[450px]  h-[568px]" src="/imges/home/desktop/image-welcome.jpg" alt="" />
         </div>
       </div>
 
@@ -152,27 +153,7 @@ const home = () => {
         )}
       </div>
 
-      <div className="mt-20  
-               h-[400px] md:h-[120px]  lg:h-[150px]  flex flex-col md:flex-row lg:flex-row justify-between items-center">
-        <div className="bg-gray-500 h-[120px] flex justify-center items-center  w-[120px] ">
-          <img src="/imges/logo.svg" alt="" />
-        </div>
 
-        <div className="
-              text-[25px] md:text-[18px] lg:text-[25px] flex flex-col md:flex-row lg:flex-row gap-10 md:gap-5 lg:gap-10 text-[#7D828F] ">
-          <p className="">Portfolio</p>
-          <p className="">About Us</p>
-          <p className="">Contact</p>
-        </div>
-
-        <div>
-          <button className="w-[212px] md:w-[200px] items-center lg:w-[212px]   p-5 md:p-2  lg:p-5  hover:bg-[#60636D] h-[52px]  rounded-md 
-            gap-4 bg-[#1B1D23] flex">
-            <p className="text-[#FFFFFF] font-semibold">See Our Portfolio</p>
-            <img className="w-[24px] h-[18px]" src="/imges/icons/Group 18.svg" alt="" />
-          </button>
-        </div>
-      </div>
 
     </div>
   );

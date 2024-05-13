@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Route from './components/route';
 import Home from './components/home';
+import Protfulio from './components/protfulio';
+import About from './components/about';
 
 import {
   createBrowserRouter,
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path: "/protfulio",
+        element: <Protfulio></Protfulio>
+      },
+      {
+        path: "/about",
+        element: <About></About>
       }
     ]
   },

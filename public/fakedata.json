@@ -61,6 +61,24 @@
         "img_name": "https://i.imgur.com/wvyGDt0.jpeg",
         "name" : "Hypers",
         "details" : "January 2012"
+      },
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/aOgxbwL.jpeg",
+        "name" : "Seraph Station",
+        "details" : "September 2019"
+      },
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/C5t8JB6.jpeg",
+        "name" : "Trinity Bank Tower",
+        "details" : "January 2012"
+      },
+      {
+        "id": 1,
+        "img_name": "https://i.imgur.com/hihWLvS.jpeg",
+        "name" : "Project Paramour",
+        "details" : "February 2008"
       }
   ]
   
